@@ -31,8 +31,8 @@ class LRUCache
     capacity=capacity1;
     mpp.clear();
     head=new Node(-1,-1);
-    head->next=tail;
     tail=new Node(-1,-1);
+    head->next=tail;
     tail->prev=head;
   } 
    void deletenode(Node* temp)
